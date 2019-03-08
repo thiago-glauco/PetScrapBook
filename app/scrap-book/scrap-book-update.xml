@@ -1,0 +1,12 @@
+<Page loaded="onPageLoaded">
+    <StackLayout>
+        <Label text="{{ title, title + ' Scrapbook Page' }}" /> // #A
+        <TextField class="header" text="{{ title }}" hint="Enter title..." />
+        <!--<TextField text="{{ description }}" hint="Enter the pet's description..." />-->
+        <Label text="{{ 'Age: ' + calcAge(date) + ' years old'}} " />
+        <DatePicker date="{{date}}" />
+        <Label text="Gender: " />
+        <ListPicker items="{{ genders }}" selectedIndex="{{ gender }}" />
+        <Button tap="onDoneTap" text="Done" />
+    </StackLayout>
+</Page>

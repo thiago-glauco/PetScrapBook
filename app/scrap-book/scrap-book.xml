@@ -1,0 +1,15 @@
+<Page loaded="pageLoaded">
+    <Page.actionBar>
+        <ActionBar title="My Pet's Scrapbook">
+            <ActionItem text="Add" tap="onAddTap" ios.position="right"
+                android.position="actionBar" />
+        </ActionBar>
+    </Page.actionBar>
+    <StackLayout>
+        <ListView items="{{pages}}" itemHeight="300" itemTap="onItemTap">
+            <ListView.itemTemplate>
+                    <Label text="{{title, title + ' ScrapBook (' + calcAge( date ) + ' years old)' }}" />
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+</Page>
